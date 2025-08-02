@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Test",
+    "slug": "test",
+    "version": "1.0.8",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "test",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "web": {
+      "output": "server"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "test.iskcon.london",
+      "splash": {
+        "backgroundColor": "#FF8C42"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#6bbc9d"
+      },
+      "package": "test.iskcon.london"
+    },
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#212529"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.test.iskcon.london",
+          "enableGooglePay": true,
+          "enableApplePay": true
+        }
+      ],
+      "expo-secure-store",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f822bc54-284a-41ad-9998-11f8af25577b"
+      }
+    },
+    "owner": "iskcon"
+  }
+}
